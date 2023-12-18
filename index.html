@@ -1,0 +1,95 @@
+ <html>
+
+<head>
+    <title>Live Bitcoin Price</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body style="
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+padding: 20px;">
+
+    <h1 style="margin-top: 50px;
+    text-transform: uppercase;
+    font-size: 70px;
+    margin-bottom: 50px;    
+    ">
+        Crypto currency tracker
+    </h1>
+
+
+
+    <div class="wrapper">
+        <header id="coin">Current Bitcoin Price:</header>
+        <div class="content">
+            <div class="quote-area">
+                <span id="price" style="font-size: 30px;"></span>
+            </div>
+            <div class="author">
+                <span>__</span>
+                <span class="name">Click On the buttons to fetch more</span>
+            </div>
+        </div>
+        <div class="buttons">
+            <div class="features">
+                <ul>
+                    <li><i onclick="changeData('ethereum')" >
+                            <img height="25" width="25" src="https://cryptologos.cc/logos/ethereum-eth-logo.png"
+                                alt=""></i></li>
+                    <li><i onclick="changeData('bitcoin')" >
+                            <img height="25" width="25" src="https://cryptologos.cc/logos/bitcoin-btc-logo.png"
+                                alt=""></i></li>
+                    </i></li>
+                    <li><i onclick="changeData('tether')" >
+                            <img height="25" width="25" src="https://cryptologos.cc/logos/tether-usdt-logo.png"
+                                alt=""></i></li>
+                    </i></li>
+                    <li><i onclick="changeData('binancecoin')" >
+                            <img height="25" width="25" src="https://cryptologos.cc/logos/bnb-bnb-logo.png" alt=""></i>
+                    </li>
+                    </i></li>
+                    <li><i onclick="changeData('stellar')" >
+                            <img height="25" width="25" src="https://cryptologos.cc/logos/stellar-xlm-logo.png"
+                                alt=""></i></li>
+                    </i></li>
+                    <li><i onclick="changeData('binance-peg-eos')" >
+                            <img height="25" width="25" src="https://cryptologos.cc/logos/eos-eos-logo.png" alt=""></i>
+                    </li>
+                    </i></li>
+
+                </ul>
+                <button id="getprice">Get Latest Price</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <p style="color:white;margin-top: 60px;font-size: x-large;">Last updated on:
+        <span style="color:white;" id="updTime"></span>
+    </p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
